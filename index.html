@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simple Diff calculator</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js" defer></script>
-    
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').then(registration =>{ 
+                    console.log('ServiceWorker registration succeeded', registration);
+                }, error => {
+                    console.error('ServiceWorker registration failed', error);
+                });
+            })
+        }
+    </script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Simple Diff Calculator</h1>
-        <p><strike>With offline support</strike> using Local Storage <strike>and Service Workers</strike></p>
+        <p>With offline support using Local Storage and Service Workers</p>
         <div class="box">
             <span>from</span>
             <input type="number" id="percent-from" step="0.1" />
