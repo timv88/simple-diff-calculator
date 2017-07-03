@@ -1,8 +1,8 @@
 const CACHE_NAME = 'simple-diff-calculator-v1';
 const urlsToCache = [
-    '/',
-    '/styles/style.css',
-    '/scripts/index.js'
+    './',
+    './styles/style.css',
+    './scripts/index.js'
 ];
 
 self.addEventListener('install', event => {
