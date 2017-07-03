@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Diff calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Diff Calculator</h1>
+        <p><strike>With offline support</strike> using Local Storage <strike>and Service Workers</strike></p>
+        <div class="box">
+            <span>from</span>
+            <input type="number" id="percent-from" step="0.1" />
+            <span class="operator">+</span>
+            <input type="number" id="percent-diff" step="0.1" />
+            <span class="percent">%</span>
+            <span>=</span>
+            <span id="percent-output"></span>
+        </div>
+        <div class="box">
+            <span>from</span>
+            <input type="number" id="number-from" step="0.1" />
+            <span class="operator">to</span>
+            <input type="number" id="number-to" value="0" step="0.1" />
+            <span class="diff-equals">=</span>
+            <span class="output" id="number-output">0%</span>
+        </div>
+    </div>
+</body>
+</html>

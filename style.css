@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box; 
+}
+
+* + * {
+    margin-top: 1rem;
+}
+
+html {
+    font-size: 14px;
+    font-family: consolas, monospace;
+}
+
+.container {
+    min-width: 320px;
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="number"] {
+    font-size: 2rem;
+    width: 6rem;
+}
+
+.box {
+    font-size: 2rem;
+}
+
+.operator {
+    display: inline-block;
+    width: 2rem;
+}
+
+.percent {
+    margin-left: -1rem;
+}
+
+.diff-equals {
+    margin-left: 1rem;
+}
